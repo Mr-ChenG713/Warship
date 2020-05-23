@@ -45,6 +45,8 @@
 		<members>Resource__c.Utilization_Limit</members>
 		<members>Supply__c.Cost_Limit</members>
 		<members>Supply__c.Quantity_Limit</members>
+		<members>Warship__c.Date_limit</members>
+		<members>Warship__c.Milesto_Limit</members>
 		<name>ValidationRule</name>
 	</types>
 	<version>48.0</version>

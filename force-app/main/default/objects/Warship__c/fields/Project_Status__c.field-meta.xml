@@ -12,23 +12,31 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Green</fullName>
-                <default>true</default>
+                <color>#33CC00</color>
+                <default>false</default>
                 <label>Green</label>
             </value>
             <value>
                 <fullName>Yellow</fullName>
+                <color>#F3D904</color>
                 <default>false</default>
                 <label>Yellow</label>
             </value>
             <value>
                 <fullName>Red</fullName>
+                <color>#FF0000</color>
                 <default>false</default>
                 <label>Red</label>
             </value>
             <value>
-                <fullName>Complete</fullName>
+                <fullName>Completed</fullName>
                 <default>false</default>
-                <label>Complete</label>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Planning</fullName>
+                <default>true</default>
+                <label>Planning</label>
             </value>
         </valueSetDefinition>
     </valueSet>
