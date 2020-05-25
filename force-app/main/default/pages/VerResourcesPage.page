@@ -1,0 +1,10 @@
+<apex:page standardController="Resource__c" recordSetVar="Resource">
+    <apex:pageBlock title="Lista de Resources">
+        <apex:pageBlockTable value="{!Resource}" var="Item">
+            <apex:column value="{!Item.Name}"/>
+            <apex:column value="{!Item.Quantity__c}"/>
+            <apex:column value="{!Item.Utilization__c}"/>
+            <apex:column value="{!Item.CreatedDate}"/>
+        </apex:pageBlockTable>  
+    </apex:pageBlock>
+</apex:page>

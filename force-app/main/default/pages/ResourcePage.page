@@ -1,0 +1,7 @@
+<apex:page standardController="Resource__c">
+    <apex:form >
+        <apex:pageBlock title="Resource"> 
+            <apex:detail />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

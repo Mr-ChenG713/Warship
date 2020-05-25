@@ -1,0 +1,27 @@
+<apex:page standardController="Warship__c" extensions="ControllerPages" docType="html-5.0">
+            <center>
+                    <apex:form >
+                        <apex:pageBlock title="Adicionar Warship">
+                            <!--Mensagens-->
+                          <apex:pageMessages ></apex:pageMessages>
+                            <apex:panelGrid columns="2">
+                                Warship Name:<apex:inputText value="{!Name}"/>
+                                
+                                Mile Stone:<apex:inputText value="{!Milestone}"/>
+                                
+                                Project Status:<apex:selectList value="{!Project}" multiselect="false" size="1"><br/>
+                                <apex:selectOptions value="{!OpcoesProject}"/>
+                                </apex:selectList>
+
+                                Weapons Status:<apex:selectList value="{!WeaponsStatus}" multiselect="false" size="1"><br/>
+                                <apex:selectOptions value="{!OpcoesWeaponsStatus}"/>
+                                </apex:selectList> <br/>
+
+                             <!--End Date: <apex:inputField value="{!Warship__c.End_Date__c}"/>-->
+                              End Date: <apex:input type="date" value="{!DataFim}"/>
+                            </apex:panelGrid><br/>
+                            <apex:commandButton action="{!guardarWarship}" value="Inserir" style="margin-left:15%;"></apex:commandButton>
+                        </apex:pageBlock>
+                    </apex:form>
+            </center> 
+</apex:page>

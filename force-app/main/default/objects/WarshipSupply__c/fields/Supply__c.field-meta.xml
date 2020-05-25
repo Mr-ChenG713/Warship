@@ -6,7 +6,7 @@
     <referenceTo>Supply__c</referenceTo>
     <relationshipLabel>WarshipSupplies</relationshipLabel>
     <relationshipName>WarshipSupplies</relationshipName>
-    <relationshipOrder>1</relationshipOrder>
+    <relationshipOrder>0</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
     <trackTrending>false</trackTrending>
     <type>MasterDetail</type>
