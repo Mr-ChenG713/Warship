@@ -1,0 +1,7 @@
+<apex:page standardController="Warship__c" extensions="ControllerPages">
+    <apex:form >
+        <apex:pageBlock title="Warship" >
+            <apex:detail relatedList="false"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

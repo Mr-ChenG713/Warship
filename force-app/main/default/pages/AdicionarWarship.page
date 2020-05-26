@@ -17,11 +17,11 @@
                                 <apex:selectOptions value="{!OpcoesWeaponsStatus}"/>
                                 </apex:selectList> <br/>
 
-                             <!--End Date: <apex:inputField value="{!Warship__c.End_Date__c}"/>-->
                               End Date: <apex:input type="date" value="{!DataFim}"/>
                             </apex:panelGrid><br/>
                             <apex:commandButton action="{!guardarWarship}" value="Inserir" style="margin-left:15%;"></apex:commandButton>
                         </apex:pageBlock>
                     </apex:form>
+                  
             </center> 
 </apex:page>

@@ -1,0 +1,10 @@
+<apex:page standardController="Supply__c" recordSetVar="Supply" >
+    <apex:pageBlock title="Lista de Supply">
+        <apex:pageBlockTable value="{!Supply}" var="Item">
+            <apex:column value="{!Item.Name}"/>
+            <apex:column value="{!Item.Quantity__c}"/>
+            <apex:column value="{!Item.Unit_Cost__c	}"/>
+            <apex:column value="{!Item.Total_Cost__c}"/>
+        </apex:pageBlockTable>  
+    </apex:pageBlock>
+</apex:page>

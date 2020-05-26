@@ -1,0 +1,21 @@
+<apex:page standardController="Resource__c" extensions="ResourcePageController">
+     <center>
+                    <apex:form >
+                        <apex:pageBlock title="Adicionar Resource">
+                            <!--Mensagens-->
+                          <apex:pageMessages ></apex:pageMessages>
+                            <apex:panelGrid columns="2">
+                                Resource Name:<apex:inputText value="{!Name}"/>
+                                
+                                Quantity:<apex:inputText value="{!Quantidade}"/>
+                                
+                                Utilization:<apex:inputText value="{!Utilizacao}"/>
+
+
+                            </apex:panelGrid><br/>
+                            <apex:commandButton action="{!guardarResource}" value="Inserir" style="margin-left:15%;"></apex:commandButton>
+                        </apex:pageBlock>
+                    </apex:form>
+                  
+            </center> 
+</apex:page>

@@ -2,7 +2,7 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Cost_Limit</fullName>
     <active>true</active>
-    <errorConditionFormula>AND( Unit_Cost__c &lt;= 0 )</errorConditionFormula>
+    <errorConditionFormula>AND( Unit_Cost__c  &lt;= 0)</errorConditionFormula>
     <errorDisplayField>Unit_Cost__c</errorDisplayField>
     <errorMessage>Cost greater than 0</errorMessage>
 </ValidationRule>

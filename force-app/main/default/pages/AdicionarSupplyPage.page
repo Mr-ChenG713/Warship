@@ -1,0 +1,21 @@
+<apex:page standardController="Supply__c" extensions="AdicionarSupplyController">
+     <center>
+                    <apex:form >
+                        <apex:pageBlock title="Adicionar Supply">
+                            <!--Mensagens-->
+                          <apex:pageMessages ></apex:pageMessages>
+                            <apex:panelGrid columns="2">
+                                Supply Name:<apex:inputText value="{!Name}"/>
+                                
+                                Quantity:<apex:inputText value="{!Quantidade}"/>
+                                
+                                Unit Cost:<apex:inputText value="{!UnitCost}"/>
+
+
+                            </apex:panelGrid><br/>
+                            <apex:commandButton action="{!guardarSupply}" value="Inserir" style="margin-left:15%;"></apex:commandButton>
+                        </apex:pageBlock>
+                    </apex:form>
+                  
+            </center> 
+</apex:page>

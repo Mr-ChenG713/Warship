@@ -1,4 +1,4 @@
-<apex:page standardController="Warship__c" recordSetVar="Warship" docType="html-5.0">
+<apex:page standardController="Warship__c" recordSetVar="Warship" >
     <apex:pageBlock title="Lista de Warships">
         <apex:pageBlockTable value="{!Warship}" var="Item">
             <apex:column value="{!Item.Name}"/>

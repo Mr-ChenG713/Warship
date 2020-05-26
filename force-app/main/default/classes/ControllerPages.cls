@@ -2,14 +2,19 @@ public with sharing class ControllerPages {
     public ControllerPages(ApexPages.StandardController controller) {
         
     }
+    
     public String Name {get;set;}
     public String Project {get;set;}
     public String WeaponsStatus {get;set;}
     public Date DataFim{get;set;}
     public Integer Milestone{get;set;}
-    public Warship__c warship{get;set;}
+    public Warship__c warship{get;set;} 
 
     
+    
+
+        
+        
     
     public List<SelectOption> getOpcoesProject(){
         Schema.DescribeFieldResult describeResult = Warship__c.Project_Status__c.getDescribe();
@@ -22,6 +27,7 @@ public with sharing class ControllerPages {
                 optionToReturn.add(new SelectOption(pEntry.getValue(),pEntry.getLabel()));
             }
         }
+         //System.debug('Minha var: '+ optionToReturn );
         return optionToReturn;
     }
     
@@ -51,7 +57,10 @@ public with sharing class ControllerPages {
             try{
                 if(objWarship.Project_Status__c != 'Escolha uma opção' && objWarship.Name != null && objWarship.Weapons_Status__c != 'Escolha uma opção'){
                     insert objWarship;
-            		
+                    
+
+            		 
+                    
                     ApexPages.addMessage(new ApexPages.message(ApexPages.Severity.CONFIRM,'Warship inserido com sucesso'));
                     Name =null;
                     Project =null;
