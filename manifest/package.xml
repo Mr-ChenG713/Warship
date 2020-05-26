@@ -2,30 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>*</members>
-		<name>ApexClass</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexComponent</name>
-	</types>
-	<types>
-		<members>AdicionarWarship</members>
-		<members>ResourcePage</members>
-		<members>VerResourcesPage</members>
-		<members>VerWarshipPage</members>
-		<name>ApexPage</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexTestSuite</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>ApexTrigger</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
 		<members>Resource__c</members>
@@ -36,16 +13,13 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>*</members>
+		<members>Resource__c</members>
+		<members>Starship__c</members>
+		<members>Supply__c</members>
+		<members>WarshipResource__c</members>
+		<members>WarshipSupply__c</members>
+		<members>Warship__c</members>
 		<name>CustomTab</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>LightningComponentBundle</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>StaticResource</name>
 	</types>
 	<types>
 		<members>Resource__c.Quantity_Limit</members>
